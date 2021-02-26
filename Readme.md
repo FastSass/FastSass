@@ -1,5 +1,6 @@
-LibSass - Sass compiler written in C++
-======================================
+# FastSass - Sass compiler written in C++
+
+**Currently Being Updated**
 
 Currently maintained by Marcel Greter ([@mgreter]) and Michael Mifsud ([@xzyfer])
 Originally created by Aaron Leung ([@akhleung]) and Hampton Catlin ([@hcatlin])
@@ -41,24 +42,21 @@ CLI tool built by the same people as LibSass.
 This list does not say anything about the quality of either the listed or not listed [implementations](docs/implementations.md)!
 The authors of the listed projects above are just known to work regularly together with LibSass developers.
 
-About
------
+## About
 
 LibSass is a C++ port of the original Ruby Sass CSS compiler with a [C API](docs/api-doc.md).
 We coded LibSass with portability and efficiency in mind. You can expect LibSass to be a lot
 faster than Ruby Sass and on par or faster than the best alternative CSS compilers around.
 
-Developing
-----------
+## Developing
 
 As noted above, the LibSass repository does not contain any binaries or other way to execute
 LibSass. Therefore, you need an implementer to develop LibSass. Easiest is to start with
-the official [SassC](http://github.com/sass/sassc) CLI wrapper. It is *guaranteed* to compile
+the official [SassC](http://github.com/sass/sassc) CLI wrapper. It is _guaranteed_ to compile
 with the latest code in LibSass master, since it is also used in the CI process. There is no
 limitation here, as you may use any other LibSass implementer to test your LibSass branch!
 
-Testing
--------
+## Testing
 
 Since LibSass is a pure library, tests are run through the [Sass-Spec](https://github.com/sass/sass-spec)
 project using the [SassC](http://github.com/sass/sassc) CLI wrapper. To run the tests against LibSass while
@@ -66,8 +64,7 @@ developing, you can run `./script/spec`. This will clone SassC and Sass-Spec und
 then run the Sass-Spec test suite. You may want to update the clones to ensure you have the latest version.
 Note that the scripts in the `./script` folder are mainly intended for our CI needs.
 
-Building
---------
+## Building
 
 To build LibSass you need GCC 4.7+ or Clang/LLVM. If your OS is older, you may need to upgrade
 them first (or install clang as an alternative). On Windows, you need MinGW with GCC 4.7+ or VS 2013
@@ -76,17 +73,12 @@ and/or command line interpreters.
 
 See the [build docs for further instructions](docs/build.md)!
 
-Compatibility
--------------
+## Compatibility
 
 For all intents and purposes LibSass is fully compatible with the Sass language spec. Any known
 differences can be found as open issues.
 
-
-
-
-About Sass
-----------
+## About Sass
 
 Sass is a CSS pre-processor language to add on exciting, new, awesome features to CSS. Sass was
 the first language of its kind and by far the most mature and up to date codebase.
@@ -99,8 +91,7 @@ For more information about Sass itself, please visit https://sass-lang.com
 
 Initial development of LibSass by Aaron Leung and Hampton Catlin was supported by [Moovweb](http://www.moovweb.com).
 
-Licensing
----------
+## Licensing
 
 Our [MIT license](LICENSE) is designed to be as simple and liberal as possible.
 
